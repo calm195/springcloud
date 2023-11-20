@@ -1,0 +1,13 @@
+server:
+  port: 7778
+spring:
+  application:
+    name: hystrix-monitor
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: '*'
